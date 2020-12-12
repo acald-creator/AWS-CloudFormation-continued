@@ -30,4 +30,20 @@
     - Make sure Dockerfile is created and included
     - Include a Linting step (show failed and success screenshots)
 
-## Key Things to Look For
+## Steps Taken
+- IAM Profile
+    - Create the Jenkins role + Instance (EC2) profile (user, group, policy)
+        - Make sure that the group includes:
+            - AmazonEC2FullAccess
+            - AmazonVPCFullAccess
+            - AmazonS3FullAccess
+        - Create the user account (programmatic access and console access)
+        - Make sure that the user is setup with the SSH Key Pair for the EC2 instance (Jenkins Master)
+            - Create a security group for the EC2 instnace (Jenkins Master)
+                - Custom TCP Rule, TCP Protocl and Port 8080
+                - Make sure the instance is only accessible by your own IP
+    - Create the Packer use + Keys + SSM Parameter
+        - Include these options in the inline policy for the role
+            - iam:GetInstanceProfile
+            - iam:PassRole
+    - Create the Terraform role (deployment role)

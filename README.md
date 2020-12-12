@@ -42,8 +42,8 @@
             - Create a security group for the EC2 instnace (Jenkins Master)
                 - Custom TCP Rule, TCP Protocl and Port 8080
                 - Make sure the instance is only accessible by your own IP
-    - Create the Packer use + Keys + SSM Parameter
+    - Create the Packer use + Keys + SSM Parameter (optional)
         - Include these options in the inline policy for the role
             - iam:GetInstanceProfile
             - iam:PassRole
-    - Create the Terraform role (deployment role)
+    - Create the Terraform role (deployment role) (optional)

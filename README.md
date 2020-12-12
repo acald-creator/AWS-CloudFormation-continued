@@ -2,7 +2,6 @@
 > This is an enhanced version of the original project that I submitted for Udacity Cloud DevOps Nanodegree that teaches the differences between using rolling deployments and blue/green deployments. (@TODO Create a blog or a separate doc file to detail this information)
 
 ## Project Tasks
----
 - AWS Environment / Console / CLI
 - Use Jenkins to implement CI/CD (Continuous Integration, Continuous Deployment)
 - Build the pipelines with Jenkins
@@ -13,7 +12,6 @@
 - Create screenshots of the appropriate steps and errors
 
 ## Propose and Scope the Project
----
 - Pipeline Setup
     - Rolling Deployment v. Blue/Green Deployment?
     - Continuous Integration Tool(s) - Jenkins?
@@ -33,4 +31,3 @@
     - Include a Linting step (show failed and success screenshots)
 
 ## Key Things to Look For
----
